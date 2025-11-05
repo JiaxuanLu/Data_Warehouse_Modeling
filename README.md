@@ -1,7 +1,7 @@
 # Northwind Data Warehouse
 
 A modern **data warehouse project** built with **dbt** on **Snowflake**, using the classic **Northwind** sales dataset.  
-This project demonstrates how to design a scalable ELT pipeline with clear modeling layers — from raw data to business-ready analytics tables.
+This project demonstrates how to design a scalable ELT pipeline with clear modeling layers, from raw data to business-ready analytics tables.
 
 
 ## Project Overview
@@ -26,3 +26,4 @@ The goal of this project is to transform the Northwind sales database into a **d
 | `snapshots/` | Historical tracking (future expansion) |
 | `analyses/` | Exploratory SQL analyses |
 | `dbt_project.yml` | dbt project config |
+
