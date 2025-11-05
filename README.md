@@ -13,20 +13,19 @@ The pipeline follows a **modular ELT architecture** using **dbt** for transforma
 
 
 ## Project Architecture  
-northwind-data-warehouse/
+nnorthwind-data-warehouse/
 │
 ├── models/
-│   ├── northwind/
-│   │   ├── staging/               # Data cleaning and standardization
-│   │   ├── warehouse/             # Fact and dimension tables
-│   │   └── analytics_obt/         # Business-ready reporting tables
-│   │
-│   └── practice_project_jaffle_shop/  # Reference dbt project for testing
+│ ├── northwind/
+│ │ ├── staging/ # Data cleaning and standardization
+│ │ ├── warehouse/ # Fact and dimension tables
+│ │ └── analytics_obt/ # Business-ready reporting tables
+│ │
+│ └── practice_project_jaffle_shop/ # Reference dbt project for testing
 │
-├── seeds/                         # Static reference datasets
-├── tests/                         # Custom and generic dbt tests
-├── macros/                        # Reusable SQL macros
-├── snapshots/                     # Historical tracking (future expansion)
-├── analyses/                      # Exploratory SQL analyses
+├── seeds/ # Static reference datasets
+├── tests/ # Custom and generic dbt tests
+├── macros/ # Reusable SQL macros
+├── snapshots/ # Historical tracking (future expansion)
+├── analyses/ # Exploratory SQL analyses
 └── dbt_project.yml
-
