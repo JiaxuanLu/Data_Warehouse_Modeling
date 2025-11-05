@@ -12,20 +12,21 @@ The pipeline follows a **modular ELT architecture** using **dbt** for transforma
 - Provide **analytics-ready datasets** to support reporting in BI tools such as Power BI or Looker.  
 
 
-## Project Architecture  
-nnorthwind-data-warehouse/
-│
-├── models/
-│ ├── northwind/
-│ │ ├── staging/ # Data cleaning and standardization
-│ │ ├── warehouse/ # Fact and dimension tables
-│ │ └── analytics_obt/ # Business-ready reporting tables
-│ │
-│ └── practice_project_jaffle_shop/ # Reference dbt project for testing
-│
-├── seeds/ # Static reference datasets
-├── tests/ # Custom and generic dbt tests
-├── macros/ # Reusable SQL macros
-├── snapshots/ # Historical tracking (future expansion)
-├── analyses/ # Exploratory SQL analyses
-└── dbt_project.yml
+### Project Architecture
+
+| Path | Purpose |
+|---|---|
+| `northwind-data-warehouse/` | Repository root |
+| `models/` | dbt models root |
+| `models/northwind/` | Northwind project models |
+| `models/northwind/staging/` | Data cleaning and standardization |
+| `models/northwind/warehouse/` | Fact and dimension tables |
+| `models/northwind/analytics_obt/` | Business-ready reporting tables |
+| `models/practice_project_jaffle_shop/` | Reference dbt project for testing |
+| `seeds/` | Static reference datasets |
+| `tests/` | Custom and generic dbt tests |
+| `macros/` | Reusable SQL macros |
+| `snapshots/` | Historical tracking (future expansion) |
+| `analyses/` | Exploratory SQL analyses |
+| `dbt_project.yml` | dbt project config |
+
